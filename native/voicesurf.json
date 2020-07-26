@@ -1,0 +1,7 @@
+{
+    "name": "voicesurf",
+    "description": "voicesurf messaging host",
+    "path": "/Users/keyhanvakil/voiceclick/native/exe",
+    "type": "stdio",
+    "allowed_extensions": [ "voicesurf@kvakil.me" ]
+}

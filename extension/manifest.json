@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "voicesurf",
+    "version": "0.0.1",
+
+    "description": "voicesurf",
+
+    "icons": {
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["watcher.js"]
+        }
+    ],
+
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "voicesurf@kvakil.me",
+            "strict_min_version": "79.0"
+        }
+    },
+
+    "permissions": ["nativeMessaging", "notifications"]
+}
